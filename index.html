@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card" id="intro">
+        <h2>Alejandro Bravo Lingyte</h2>
+        <h3>Frontend Programmer & Game Dev</h3>
+        <p>
+            Hola!, soc Alejandro, un xiquet que disfruta programar i crear videojocs quan tinc temps lliure.
+        </p>
+        <p>
+            Soc molt fan de Undertale i Deltarune, fets per Toby Fox i també m'agrada crear musica per als meus jocs
+            utilitzant FL Studio.
+        </p>
+    </div>
+
+    <div class="card" id="knowledge">
+        <h2>Tinc experiencia en:</h2>
+        <ul>
+            <li>El Stack de Programació web</li>
+            <li>Unity + C#</li>
+            <li>GameMaker Studio + GML</li>
+            <li>FL Studio</li>
+            <li>BlockBench (3D)</li>      
+            <li>Disseny de videojocs amb narrativa</li>
+            <li>RPG Maker</li>
+        </ul>
+    </div>
+
+    <div class="card" id="iwantknow">
+        <h2>Vull Aprendre:</h2>
+        <ul>
+            <li>Unity Avançat</li>
+            <li>Desenvolupament de jocs online</li>
+            <li>React</li>
+            <li>Desenvolupament de videojocs 3D</li>
+            <li>Modelatge 3D</li>
+            <li>Teoria Musical</li>
+        </ul>
+    </div>
+
+    <div class="card" id="projects">
+        <h2>Projectes:</h2>
+        <ul>
+            <li>
+                BackRooms: Survive, és un joc que estic desenvolupant en conjunt amb un amic meu<br>
+                està inspirat en el mon dels espais liminals i està en una fase de desenvolupant molt temprana
+            </li>
+            <li>Aquesta Web</li>
+            <li>
+                Un simulador de particules fet en C++ i raylib 
+                <a href="https://github.com/Alek0MC2009/Particle-Simulator">Repositori de GitHub</a>
+            </li>
+            <li>
+                Undertale: The Asriel Redemption, un Fangame (joc no oficial fet per fans) del joc Undertale, 
+                que vaig tindre que retirar per problemes de drets amb Toby (per la disquera, no per toby)
+                <img src="imgs/cap1.png" alt="Undertale Fangame">
+            </li>
+            <li>Un bot de WhatsApp que no vaig terminar, fet amb JavaScript</li>
+        </ul>
+    </div>
+
+    <div class="card" id="social">
+        <h2>Les meves xarxes</h2>
+        <ul>
+            <li><a href="https://instagram.com/alek0mc2009">Instagram</a></li>
+            <li><a href="https://github.com/Alek0MC2009">GitHub</a></li>
+            <li><a href="https://www.youtube.com/@prod.alek0mc2009">Youtube</a></li>
+        </ul>
+    </div>
+
+    <div class="reproductor-musica">
+        <h2>🎵 Reproductor de la meva música</h2>
+
+        <div class="now-playing">
+            <p><strong>Està sonant ara:</strong> <span id="current-song">Selecciona una cançó</span></p>
+        </div>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+            <div class="time-display">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <button id="prev" title="Anterior">
+                <span class="emoji">⏮️</span>
+                <span class="label">Anterior</span>
+            </button>
+            <button id="play" title="Reproduir">
+                <span class="emoji">▶️</span>
+                <span class="label">Reproduir</span>
+            </button>
+            <button id="pause" title="Pausa">
+                <span class="emoji">⏸️</span>
+                <span class="label">Pausa</span>
+            </button>
+            <button id="next" title="Següent">
+                <span class="emoji">⏭️</span>
+                <span class="label">Següent</span>
+            </button>
+        </div>
+
+        <div class="playlist-container">
+            <h3>Llista de reproducció</h3>
+            <ul id="playlist"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
